@@ -11,8 +11,13 @@ def about(request):
 def brands(request):
     return render(request, 'brands.html' )    
 
-def error_403(request, exception):
-    return render(request,'403.html')
+from django.core.exceptions import PermissionDenied
+
+def change(request,id):
+    if not request.user.is_teacher:
+        raise PermissionDenied
+    else:
+    #add your code
 
 def contacts(request):
     if request .method == 'POST' :
