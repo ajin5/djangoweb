@@ -11,6 +11,9 @@ def about(request):
 def brands(request):
     return render(request, 'brands.html' )    
 
+def error_403(request, exception):
+    return render(request,'403.html')
+
 def contacts(request):
     if request .method == 'POST' :
         name = request.POST.get('name')
