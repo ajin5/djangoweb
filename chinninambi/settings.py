@@ -130,7 +130,7 @@ STATICFILES_DIRS = [
 
 
 
-STATIC_ROOT = BASE_DIR / 'assets'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-CSRF_TRUSTED_ORIGINS = ['https://djangoweb-production.up.railway.app']
+# CSRF_TRUSTED_ORIGINS = ['*']
 
