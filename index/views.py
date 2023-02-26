@@ -11,7 +11,7 @@ def about(request):
 def brands(request):
     return render(request, 'brands.html' )    
 
-from django.core.exceptions import PermissionDenied
+
 
 
 def contacts(request):
