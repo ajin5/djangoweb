@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import contactform
+from django.views.decorators.csrf import csrf_exempt
 
 def home(request):
     return render(request, 'index.html' )
@@ -13,7 +14,7 @@ def brands(request):
 
 
 
-
+@csrf_exempt
 def contacts(request):
     if request .method == 'POST' :
         name = request.POST.get('name')
