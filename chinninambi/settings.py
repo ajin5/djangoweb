@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'brands',
     'index',
+    'import_export',
 ]
 
 MIDDLEWARE = [
